@@ -32,6 +32,7 @@
     "@types/react-dom": "^19.2.3",
     "@types/react-syntax-highlighter": "15.5.13",
     "@vitejs/plugin-react": "^6.0.1",
+    "prettier": "^3.9.8",
     "typescript": "~5.9.3",
     "vite": "^8.0.0",
     "vite-plugin-zip-pack": "^1.2.4"
