@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorun — Your AI Tutor for LeetCode</title>
+  <meta name="description" content="AI-powered tutoring overlay for LeetCode. Get step-by-step solutions, explanations, and learning insights while you solve problems on leetcode.com.">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="landing-body">
+
+  <!-- Header -->
+  <header id="header">
+    <a href="#hero" id="wordmark">
+      <svg width="24" height="30" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g class="logo-path">
+          <path d="m0 24c0-4.0995 1.29832-7.8957 3.50621-11h9.49379v1.7789c-3.01021 1.9627-5 5.3595-5 9.2211 0 6.0751 4.9249 11 11 11v8c-10.49341 0-19-8.5066-19-19z" />
+          <path d="m34.4938 35c2.2079-3.1043 3.5062-6.9005 3.5062-11 0-10.4934-8.5066-19-19-19v8c6.0751 0 11 4.9249 11 11 0 3.8616-1.9898 7.2584-5 9.2211v1.7789z" />
+        </g>
+      </svg>
+      <span>Algorun</span>
+    </a>
+    <a href="https://github.com/ichshakib/algo-run-leetcode-tutor" target="_blank" rel="noopener noreferrer" id="github-link" title="View on GitHub" aria-label="GitHub Repository">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </header>
+
+  <!-- Dot Navigation -->
+  <nav id="dot-nav" aria-label="Page navigation">
+    <div class="dot active" data-index="0" title="Hero"></div>
+    <div class="dot" data-index="1" title="Problem"></div>
+    <div class="dot" data-index="2" title="Features"></div>
+    <div class="dot" data-index="3" title="How it works"></div>
+    <div class="dot" data-index="4" title="Download"></div>
+  </nav>
+
+  <!-- Main Full-page Scroll Container -->
+  <div id="scroller">
+    
+    <!-- ── SCREEN 1: HERO ── -->
+    <section id="hero">
+      <div class="hero-deco deco-1"></div>
+      <div class="hero-deco deco-2"></div>
+      <div class="hero-inner">
+        <div class="hero-badge reveal">Chrome Extension · Free</div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Your <em>AI tutor</em><br>for LeetCode.
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          The context-aware AI overlay that reads your code and problem statement in real-time. Learn the <em>why</em>, not just the solution.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="https://github.com/ichshakib/algo-run-leetcode-tutor/releases/download/v1.0.1/algorun-v1.0.1.zip" class="btn-primary" id="btn-hero-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download for Chrome
+          </a>
+          <button class="btn-ghost" id="btn-how-it-works">
+            How it works
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREEN 2: THE PROBLEM ── -->
+    <section id="problem">
+      <div class="problem-inner">
+        <div class="problem-left">
+          <h2 class="reveal">
+            LeetCode is hard.<br>
+            <em>Staring harder</em><br>
+            doesn't help.
+          </h2>
+          <ul class="pain-list">
+            <li class="reveal reveal-delay-1">You copy solutions but don't retain the logic behind them</li>
+            <li class="reveal reveal-delay-2">Editorials skip the intuition and jump straight to the answer</li>
+            <li class="reveal reveal-delay-3">You're stuck on an edge case with no one to point the way</li>
+          </ul>
+        </div>
+        <div class="problem-right reveal reveal-delay-2">
+          <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="60" width="200" height="130" rx="10" fill="#2a302a" stroke="#7fb492" stroke-width="1.5" />
+            <rect x="42" y="72" width="176" height="106" rx="5" fill="#1a1e1a" />
+            <rect x="54" y="84" width="80" height="6" rx="3" fill="#7fb492" opacity="0.5" />
+            <rect x="54" y="98" width="120" height="6" rx="3" fill="#d4eadb" opacity="0.3" />
+            <rect x="66" y="112" width="60" height="6" rx="3" fill="#d4eadb" opacity="0.3" />
+            <rect x="66" y="126" width="100" height="6" rx="3" fill="#d4eadb" opacity="0.3" />
+            <rect x="54" y="140" width="50" height="6" rx="3" fill="#7fb492" opacity="0.4" />
+            <rect x="54" y="154" width="90" height="6" rx="3" fill="#d4eadb" opacity="0.2" />
+            <rect x="115" y="190" width="30" height="18" rx="2" fill="#2a302a" />
+            <rect x="90" y="205" width="80" height="8" rx="4" fill="#2a302a" />
+            <circle cx="130" cy="42" r="18" fill="#2a302a" stroke="#7fb492" stroke-width="1.5" />
+            <text x="124" y="49" font-family="serif" font-size="18" fill="#7fb492" opacity="0.9">?</text>
+            <line x1="152" y1="30" x2="162" y2="22" stroke="#7fb492" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+            <line x1="156" y1="38" x2="168" y2="34" stroke="#7fb492" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+            <line x1="108" y1="30" x2="98" y2="22" stroke="#7fb492" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREEN 3: FEATURES ── -->
+    <section id="features">
+      <div class="features-inner">
+        <p class="features-label reveal">What Algorun does</p>
+
+        <div class="feature-row reveal reveal-delay-1">
+          <div class="feature-num">01</div>
+          <div class="feature-text">
+            <h3>Context Awareness</h3>
+            <p>
+              Algorun automatically reads the problem and your current code, so you never have to copy-paste context.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-row reveal reveal-delay-2">
+          <div class="feature-num">02</div>
+          <div class="feature-text">
+            <h3>Socratic Tutoring</h3>
+            <p>
+              Instead of spoilers, get nudges and hints that help you develop the algorithmic intuition yourself.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-row reveal reveal-delay-3">
+          <div class="feature-num">03</div>
+          <div class="feature-text">
+            <h3>Complexity & Patterns</h3>
+            <p>
+              Get instant Big-O analysis and identify underlying patterns like Sliding Window or DP in plain English.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREEN 4: HOW IT WORKS ── -->
+    <section id="howitworks">
+      <div class="how-inner">
+        <p class="how-label reveal">Setup in 3 steps</p>
+        <h2 class="how-title reveal reveal-delay-1">
+          From download to<br>
+          <em>first hint</em> in under a minute.
+        </h2>
+
+        <!-- Method Toggle -->
+        <div class="method-toggle reveal reveal-delay-2">
+          <button class="toggle-btn active" data-method="unpacked" type="button">
+            Load Unpacked
+          </button>
+          <button class="toggle-btn" data-method="dragdrop" type="button">
+            Direct Drag & Drop
+          </button>
+          <div class="toggle-slider"></div>
+        </div>
+
+        <div class="steps-container">
+          <!-- Unpacked Steps -->
+          <div class="steps active" id="steps-unpacked">
+            <div class="step reveal reveal-delay-2">
+              <div class="step-num">1</div>
+              <h4>Download the zip</h4>
+              <p>Click the download button and save <code>the extension</code> anywhere on your machine.</p>
+              <span class="step-arrow">→</span>
+            </div>
+            <div class="step reveal reveal-delay-3">
+              <div class="step-num">2</div>
+              <h4>Load as unpacked</h4>
+              <p>Unzip the file, then load the folder as an unpacked Chrome extension in developer mode.</p>
+              <span class="step-arrow">→</span>
+            </div>
+            <div class="step reveal reveal-delay-4">
+              <div class="step-num">3</div>
+              <h4>Open LeetCode</h4>
+              <p>Navigate to any problem and click the Algorun panel to start getting guided help.</p>
+            </div>
+          </div>
+
+          <!-- Drag & Drop Steps -->
+          <div class="steps" id="steps-dragdrop">
+            <div class="step">
+              <div class="step-num">1</div>
+              <h4>Download the zip</h4>
+              <p>Click the download button and save <code>the extension</code> anywhere on your machine.</p>
+              <span class="step-arrow">→</span>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <h4>Direct Drag & Drop</h4>
+              <p>Enable Developer Mode on the extensions page, then drag and drop the zip file directly.</p>
+              <span class="step-arrow">→</span>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <h4>Open LeetCode</h4>
+              <p>Navigate to any problem and click the Algorun panel to start getting guided help.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-pill reveal reveal-delay-4">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          chrome://extensions
+          <span>→</span> Developer Mode
+          <span>→</span> <span id="method-pill-text">Load Unpacked</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREEN 5: DOWNLOAD ── -->
+    <section id="download">
+      <div class="download-inner">
+        <div class="download-icon reveal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5a9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </div>
+        <h2 class="download-title reveal reveal-delay-1">
+          Start solving<br>
+          <em>smarter.</em>
+        </h2>
+        <p class="download-sub reveal reveal-delay-2">
+          Stop copying solutions you don't understand.<br>
+          Let Algorun guide you to the answer.
+        </p>
+        <a href="https://github.com/ichshakib/algo-run-leetcode-tutor/releases/download/v1.0.1/algorun-v1.0.1.zip" class="btn-primary reveal reveal-delay-3" style="font-size: 1rem; padding: 15px 36px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Algorun (.zip)
+        </a>
+        <p class="download-helper reveal reveal-delay-4">
+          Chrome only · Load as unpacked extension · Free forever
+        </p>
+      </div>
+      <footer class="reveal">
+        © 2026 Algorun · Not affiliated with LeetCode
+      </footer>
+    </section>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
